@@ -1,0 +1,91 @@
+﻿@model RentoRide.Models.customer_acc
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>customer_acc</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.customer_firstname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.customer_firstname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.customer_middlename)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.customer_middlename)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.customer_lastname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.customer_lastname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.customer_namesuffix)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.customer_namesuffix)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.customer_contact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.customer_contact)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.customer_email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.customer_email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.customer_password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.customer_password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date_created)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date_created)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date_modified)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date_modified)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

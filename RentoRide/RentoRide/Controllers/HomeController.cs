@@ -8,6 +8,11 @@ namespace RentoRide.Controllers
 {
     public class HomeController : Controller
     {
+        public ActionResult Services() {
+
+            return View();
+        }
+
         public ActionResult Index()
         {
             return View();
