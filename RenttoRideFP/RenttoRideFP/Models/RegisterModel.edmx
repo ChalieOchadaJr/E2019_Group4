@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="RenttoRideDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="car_reg">
+          <Key>
+            <PropertyRef Name="car_id" />
+          </Key>
+          <Property Name="car_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="car_plateno" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="car_brand" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="car_model" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="car_color" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="car_capacity" Type="int" Nullable="false" />
+          <Property Name="car_availability" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="customer_acc">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="customer_firstname" Type="varchar(max)" Nullable="false" />
+          <Property Name="customer_middlename" Type="varchar(max)" />
+          <Property Name="customer_lastname" Type="varchar(max)" Nullable="false" />
+          <Property Name="customer_namesuffix" Type="varchar(max)" />
+          <Property Name="customer_contact" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="customer_email" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="customer_password" Type="varchar(max)" Nullable="false" />
+          <Property Name="date_created" Type="datetime" />
+          <Property Name="date_modified" Type="datetime" />
+        </EntityType>
+        <EntityContainer Name="RenttoRideDBModelStoreContainer">
+          <EntitySet Name="car_reg" EntityType="Self.car_reg" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="customer_acc" EntityType="Self.customer_acc" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RenttoRideDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="car_reg">
+          <Key>
+            <PropertyRef Name="car_id" />
+          </Key>
+          <Property Name="car_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="car_plateno" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="car_brand" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="car_model" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="car_color" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="car_capacity" Type="Int32" Nullable="false" />
+          <Property Name="car_availability" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="customer_acc">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="customer_firstname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="customer_middlename" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="customer_lastname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="customer_namesuffix" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="customer_contact" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="customer_email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="customer_password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="date_created" Type="DateTime" Precision="3" />
+          <Property Name="date_modified" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="RenttoRideDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="car_reg" EntityType="Self.car_reg" />
+          <EntitySet Name="customer_acc" EntityType="Self.customer_acc" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="RenttoRideDBModelStoreContainer" CdmEntityContainer="RenttoRideDBEntities">
+          <EntitySetMapping Name="car_reg">
+            <EntityTypeMapping TypeName="RenttoRideDBModel.car_reg">
+              <MappingFragment StoreEntitySet="car_reg">
+                <ScalarProperty Name="car_id" ColumnName="car_id" />
+                <ScalarProperty Name="car_plateno" ColumnName="car_plateno" />
+                <ScalarProperty Name="car_brand" ColumnName="car_brand" />
+                <ScalarProperty Name="car_model" ColumnName="car_model" />
+                <ScalarProperty Name="car_color" ColumnName="car_color" />
+                <ScalarProperty Name="car_capacity" ColumnName="car_capacity" />
+                <ScalarProperty Name="car_availability" ColumnName="car_availability" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="customer_acc">
+            <EntityTypeMapping TypeName="RenttoRideDBModel.customer_acc">
+              <MappingFragment StoreEntitySet="customer_acc">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="customer_firstname" ColumnName="customer_firstname" />
+                <ScalarProperty Name="customer_middlename" ColumnName="customer_middlename" />
+                <ScalarProperty Name="customer_lastname" ColumnName="customer_lastname" />
+                <ScalarProperty Name="customer_namesuffix" ColumnName="customer_namesuffix" />
+                <ScalarProperty Name="customer_contact" ColumnName="customer_contact" />
+                <ScalarProperty Name="customer_email" ColumnName="customer_email" />
+                <ScalarProperty Name="customer_password" ColumnName="customer_password" />
+                <ScalarProperty Name="date_created" ColumnName="date_created" />
+                <ScalarProperty Name="date_modified" ColumnName="date_modified" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
