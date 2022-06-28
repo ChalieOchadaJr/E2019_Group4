@@ -18,3 +18,23 @@ c:\users\dash\documents\visual studio 2015\Projects\RentaRide\RentaRide\bin\Micr
 c:\users\dash\documents\visual studio 2015\Projects\RentaRide\RentaRide\obj\Debug\RentaRide.csprojResolveAssemblyReference.cache
 c:\users\dash\documents\visual studio 2015\Projects\RentaRide\RentaRide\obj\Debug\RentaRide.dll
 c:\users\dash\documents\visual studio 2015\Projects\RentaRide\RentaRide\obj\Debug\RentaRide.pdb
+C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\bin\roslyn\csc.exe
+C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\bin\roslyn\vbc.exe
+C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\bin\roslyn\VBCSCompiler.exe
+C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\bin\RentaRide.dll.config
+C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\bin\RentaRide.dll
+C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\bin\RentaRide.pdb
+C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\obj\Debug\RentaRide.csprojResolveAssemblyReference.cache
+C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\obj\Debug\RentaRide.dll
+C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\obj\Debug\RentaRide.pdb

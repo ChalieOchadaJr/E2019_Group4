@@ -25,5 +25,21 @@ body {
   z-index:1000;
   display:flex;
 
-
 }
+
+
+ul {
+    background-color:greenyellow;
+    padding-left:0px;
+    text-align:center;
+}
+
+ul li:hover {
+        background-color:white;
+
+    }
+
+    ul.nav > li > a {
+
+        color:green;
+    }
