@@ -35,6 +35,6 @@ C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\bin\RentaRide.dll
 C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\bin\RentaRide.pdb
 C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\obj\Debug\RentaRide.csprojResolveAssemblyReference.cache
 C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\obj\Debug\RentaRide.dll
 C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\obj\Debug\RentaRide.pdb
+C:\Users\Leii\Documents\GitHub\E2019_Grp4\RentaRide\RentaRide\obj\Debug\RentaRide.csprojResolveAssemblyReference.cache

@@ -31,13 +31,40 @@ namespace RentaRide.Webpages {
         protected global::System.Web.UI.WebControls.Label lbl_name;
         
         /// <summary>
-        /// txtbx_name control.
+        /// txtbx_fname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtbx_name;
+        protected global::System.Web.UI.WebControls.TextBox txtbx_fname;
+        
+        /// <summary>
+        /// txtbx_mname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtbx_mname;
+        
+        /// <summary>
+        /// txtbx_lname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtbx_lname;
+        
+        /// <summary>
+        /// txtbx_nsuffix control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtbx_nsuffix;
         
         /// <summary>
         /// lbl_contact control.
@@ -56,24 +83,6 @@ namespace RentaRide.Webpages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtbx_contact;
-        
-        /// <summary>
-        /// lbl_Address control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_Address;
-        
-        /// <summary>
-        /// txtbx_Address control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtbx_Address;
         
         /// <summary>
         /// lbl_email control.
@@ -103,6 +112,15 @@ namespace RentaRide.Webpages {
         protected global::System.Web.UI.WebControls.Label lbl_password;
         
         /// <summary>
+        /// txtbx_password control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtbx_password;
+        
+        /// <summary>
         /// lbl_confirmPassword control.
         /// </summary>
         /// <remarks>
@@ -110,6 +128,15 @@ namespace RentaRide.Webpages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_confirmPassword;
+        
+        /// <summary>
+        /// txtbx_confirmPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtbx_confirmPassword;
         
         /// <summary>
         /// btn_register control.
