@@ -12,5 +12,16 @@
     <p>Hello</p>
     <asp:Label ID="user" runat="server" Text=""></asp:Label>
 
+    <div>
+        <h3>RentaRide</h3>
+
+        <ul>
+               <li><a href="DashBoard.aspx">DashBoard</a></li> 
+                <li></li>
+            </ul>
+
+
+    </div>
+
 </body>
 </html>

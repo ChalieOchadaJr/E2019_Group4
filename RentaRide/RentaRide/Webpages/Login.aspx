@@ -11,9 +11,11 @@
     <div>
      <h1>Login Page </h1>
         <h4>Wala Pang Design at the momint</h4>
-        <asp:Label ID="lbl_message" runat="server" Text="" color="red" ></asp:Label>
+        <asp:Label ID="lbl_uemessage" runat="server" Text="" ForeColor="Red"></asp:Label>
         <br/>
-         <asp:Label ID="lbl_email" runat="server" Text="Email:"></asp:Label><asp:TextBox ID="txtbx_email" runat="server"></asp:TextBox>
+         <asp:Label ID="lbl_email" runat="server" Text="Email / Username:"></asp:Label><asp:TextBox ID="txtbx_email" runat="server"></asp:TextBox>
+        <br />
+        <asp:Label ID="lbl_pwdmessage" runat="server" Text="" ForeColor="Red"></asp:Label>
         <br/>
          <asp:Label ID="lbl_password" runat="server" Text="Password:"></asp:Label><asp:TextBox ID="txtbx_password" runat="server" TextMode="Password"></asp:TextBox>
         <br/>

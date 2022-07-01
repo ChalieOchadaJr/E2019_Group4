@@ -5,17 +5,16 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace RentaRide.Webpages.Loggedin_Webpage
+namespace RentaRide.Webpages
 {
-   
-    public partial class DashBoard : System.Web.UI.Page
+    public partial class AdminDashBoard : System.Web.UI.Page
     {
-
         String name;
         protected void Page_Load(object sender, EventArgs e)
         {
             name = (String)(Session["ses"]);
-            user.Text = name;
+            lbl_admin.Text = name;
+
         }
     }
 }

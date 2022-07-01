@@ -12,8 +12,9 @@
         
         <h1>Register Page </h1>
         <h4>Wala Pang Design at the momint</h4>
+        <asp:Label ID="lbl_username" runat="server" Text="Username:"></asp:Label>
+        <asp:TextBox ID="txtbx_username" runat="server"></asp:TextBox>
         <br/>
-
         <asp:Label ID="lbl_name" runat="server" Text="Name"></asp:Label>
 
         <asp:TextBox ID="txtbx_fname" runat="server" ></asp:TextBox>

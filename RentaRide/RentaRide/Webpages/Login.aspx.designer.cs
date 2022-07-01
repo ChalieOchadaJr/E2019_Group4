@@ -22,13 +22,13 @@ namespace RentaRide.Webpages {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// lbl_message control.
+        /// lbl_uemessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_message;
+        protected global::System.Web.UI.WebControls.Label lbl_uemessage;
         
         /// <summary>
         /// lbl_email control.
@@ -47,6 +47,15 @@ namespace RentaRide.Webpages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtbx_email;
+        
+        /// <summary>
+        /// lbl_pwdmessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_pwdmessage;
         
         /// <summary>
         /// lbl_password control.

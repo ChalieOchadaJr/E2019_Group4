@@ -31,7 +31,9 @@ namespace RentaRide.Webpages
             con.Open();
             SqlCommand scmd = con.CreateCommand();
             scmd.CommandType = System.Data.CommandType.Text;
-            scmd.CommandText = "insert into dbo.customer_acc(customer_firstname,customer_middlename,customer_lastname,customer_namesuffix,customer_contact,customer_email,customer_password) values ('" + txtbx_fname.Text + "','" + txtbx_mname.Text + "','" + txtbx_lname.Text + "','" + txtbx_nsuffix.Text + "','" + txtbx_contact.Text + "','" + txtbx_email.Text + "','"+txtbx_password.Text+"');";
+            //scmd.CommandText = "insert into dbo.customer_acc(customer_user,customer_firstname,customer_middlename,customer_lastname,customer_namesuffix,customer_contact,customer_email,customer_password) values ('"+txtbx_username.Text+"','" + txtbx_fname.Text + "','" + txtbx_mname.Text + "','" + txtbx_lname.Text + "','" + txtbx_nsuffix.Text + "','" + txtbx_contact.Text + "','" + txtbx_email.Text + "','"+txtbx_password.Text+"');";
+            scmd.CommandText = "insert into dbo.customer_acc(customer_user,customer_firstname,customer_middlename,customer_lastname,customer_namesuffix,customer_contact,customer_email,customer_password) values ('" + txtbx_username.Text + "','" + txtbx_fname.Text + "','" + txtbx_mname.Text + "','" + txtbx_lname.Text + "','" + txtbx_nsuffix.Text + "','" + txtbx_contact.Text + "','" + txtbx_email.Text + "', HASHBYTES('SHA2_512','" + txtbx_password.Text + "') );";
+
             scmd.ExecuteNonQuery();
             con.Close();
         }

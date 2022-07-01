@@ -80,6 +80,8 @@
     <Content Include="Webpages\About.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Web.config" />
+    <Content Include="Webpages\AdminDashBoard.aspx" />
+    <Content Include="Webpages\AdminLogin.aspx" />
     <Content Include="Webpages\DashBoard.aspx" />
     <Content Include="Webpages\Login.aspx" />
     <Content Include="Webpages\Register.aspx" />
@@ -101,6 +103,20 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Webpages\AdminDashBoard.aspx.cs">
+      <DependentUpon>AdminDashBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webpages\AdminDashBoard.aspx.designer.cs">
+      <DependentUpon>AdminDashBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webpages\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webpages\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Webpages\DashBoard.aspx.cs">
       <DependentUpon>DashBoard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -132,7 +148,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\images\" />
-    <Folder Include="Webpages\Loggedin\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
