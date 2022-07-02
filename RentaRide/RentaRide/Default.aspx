@@ -19,8 +19,8 @@
         <li style="display:inline;" id="list"><a href="Default.aspx">Home</a></li>
         <li style="display:inline;" id="list a"><a href="Webpages/Service.aspx">Service</a></li>
         <li style="display:inline;" id="list b"><a href="Webpages/About.aspx">About Us</a></li>
-        <li style="display:inline;" id="list c"><a href="Webpages/Login.aspx">Login</a></li>
-         <li style="display:inline;"id="list d"><a href="Webpages/Register.aspx">Register</a></li>
+        <li style="display:inline;" id="list_log"><a href="Webpages/Login.aspx">Login</a></li>
+         <li style="display:inline;margin-right:30px;"id="list_reg"><a href="Webpages/Register.aspx">Register</a></li>
         </ul> 
         </nav>
       </div>
