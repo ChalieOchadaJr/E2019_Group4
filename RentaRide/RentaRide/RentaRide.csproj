@@ -78,6 +78,8 @@
     <Content Include="CSS\Default.css" />
     <Content Include="Scripts\Default.js" />
     <Content Include="src\images\Default_Redcar.png" />
+    <Content Include="src\images\Group_1.png" />
+    <Content Include="src\images\Group1.svg" />
     <Content Include="src\video\Samplebackvid.mp4" />
     <Content Include="Webpages\About.aspx" />
     <Content Include="Default.aspx" />

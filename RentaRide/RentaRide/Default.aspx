@@ -35,8 +35,9 @@
                  We can assist you with all your car 
                 rentals needs here in the Philippines.
             </p>
-            <a href="Webpages/Register.aspx">Register</a>
-
+            <div class="header_btn">
+            <a href="Webpages/Register.aspx">Reserve Now!</a>
+                </div>
         </div>
 
         <div class="header-image">
