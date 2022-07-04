@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\Register.css" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -80,13 +81,17 @@
     <Content Include="src\images\Default_Redcar.png" />
     <Content Include="src\images\Group_1.png" />
     <Content Include="src\images\Group1.svg" />
+    <Content Include="src\images\Reg_White.png" />
     <Content Include="src\video\Samplebackvid.mp4" />
     <Content Include="Webpages\About.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Web.config" />
-    <Content Include="Webpages\AdminDashBoard.aspx" />
+    <Content Include="Webpages\Admin\AdminDashBoard.aspx" />
     <Content Include="Webpages\AdminLogin.aspx" />
-    <Content Include="Webpages\DashBoard.aspx" />
+    <Content Include="Webpages\Admin\Cars.aspx" />
+    <Content Include="Webpages\Admin\Rents.aspx" />
+    <Content Include="Webpages\Admin\Returns.aspx" />
+    <Content Include="Webpages\User\DashBoard.aspx" />
     <Content Include="Webpages\Login.aspx" />
     <Content Include="Webpages\Register.aspx" />
     <Content Include="Webpages\Service.aspx" />
@@ -107,11 +112,11 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Webpages\AdminDashBoard.aspx.cs">
+    <Compile Include="Webpages\Admin\AdminDashBoard.aspx.cs">
       <DependentUpon>AdminDashBoard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Webpages\AdminDashBoard.aspx.designer.cs">
+    <Compile Include="Webpages\Admin\AdminDashBoard.aspx.designer.cs">
       <DependentUpon>AdminDashBoard.aspx</DependentUpon>
     </Compile>
     <Compile Include="Webpages\AdminLogin.aspx.cs">
@@ -121,11 +126,32 @@
     <Compile Include="Webpages\AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Webpages\DashBoard.aspx.cs">
+    <Compile Include="Webpages\Admin\Cars.aspx.cs">
+      <DependentUpon>Cars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webpages\Admin\Cars.aspx.designer.cs">
+      <DependentUpon>Cars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webpages\Admin\Rents.aspx.cs">
+      <DependentUpon>Rents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webpages\Admin\Rents.aspx.designer.cs">
+      <DependentUpon>Rents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webpages\Admin\Returns.aspx.cs">
+      <DependentUpon>Returns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webpages\Admin\Returns.aspx.designer.cs">
+      <DependentUpon>Returns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webpages\User\DashBoard.aspx.cs">
       <DependentUpon>DashBoard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Webpages\DashBoard.aspx.designer.cs">
+    <Compile Include="Webpages\User\DashBoard.aspx.designer.cs">
       <DependentUpon>DashBoard.aspx</DependentUpon>
     </Compile>
     <Compile Include="Webpages\Login.aspx.cs">

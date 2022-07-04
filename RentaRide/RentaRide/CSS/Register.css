@@ -1,0 +1,182 @@
+﻿* {
+    box-sizing:border-box;
+    margin:0;
+}
+
+body {
+    background-color:#DCDCDC;
+    font-family: "Popins";
+    background-image:url('../src/images/Reg_White.png');
+    background-repeat: no-repeat;
+}
+
+/* Navigation*/
+
+
+.nav_container {
+    background-color:transparent;
+    height:70px;
+}
+
+.nav_wrapper {
+    max-width:1500px;
+    margin:0,auto;
+
+}
+
+nav {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    height:70px;
+}
+
+.nav-logo {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    margin: 50px;
+/* identical to box height */
+    color: #000000;
+
+    }
+
+.nav-items li{
+    list-style:none;
+    margin-right:80px;
+}
+    .nav-items li:nth-last-of-type(1) {
+        margin:0;
+    }
+
+.nav-items li a {
+    font-family: Popins,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+/* identical to box height */
+    color: #000000;
+    text-decoration:none;
+    display:block;
+    }
+
+
+/* HEADER DESIGN*/
+.header-container{
+    height: calc(100vh - 70px);
+    width:400px;
+    display: inline-block;
+    align-items: center ;
+    margin:10px;
+    margin-top:50px;
+}
+.header-wrapper {
+    max-width:1200px;
+    display:inline-block;
+}
+.header-message h1{
+
+    line-height:100px;
+    display:inline-block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 29px;
+/* identical to box height */
+
+
+color: #E9B224;
+
+}
+.header-message p{
+
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.header-message a{
+text-decoration:none;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.header-message a:hover{
+
+    color:#F3AC21;
+}
+#formreg{
+    background-color:transparent;
+    height: 400px;
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px;
+    text-align:left;
+}
+#lbl_username,
+#lbl_Name,
+#lbl_contact,
+#lbl_email,
+#lbl_password,
+#lbl_conpass
+{
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #333;
+    height: 15px;
+    width: 120px;
+    margin-top: 15px;
+    margin-left: 10px;
+    text-align: left;
+    margin-right:15px;
+    float:left;
+}
+
+#txtbx_username,
+#txtbx_Name,
+#txtbx_contact,
+#txtbx_email,
+#txtbx_password,
+#txtbx_conpass
+ {
+    height: 30px;
+    width: 400px;
+    border: 1px solid #000;
+    margin-top: 10px;
+    font-size:15px;
+}
+#chk_agree{
+    margin-left:50px;
+
+}
+#btn_Register{
+    width: 255px;
+    height: 40px;
+    font-size:15px;
+    background: #00419C;
+    color:#FFFFFF;
+    margin-left:100px;
+}
+#btn_Register:hover{
+    background: #FFFFFF;
+    color:#000000;
+}

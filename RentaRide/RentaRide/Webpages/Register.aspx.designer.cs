@@ -13,13 +13,13 @@ namespace RentaRide.Webpages {
     public partial class Register {
         
         /// <summary>
-        /// form1 control.
+        /// formreg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm formreg;
         
         /// <summary>
         /// lbl_username control.
@@ -40,49 +40,22 @@ namespace RentaRide.Webpages {
         protected global::System.Web.UI.WebControls.TextBox txtbx_username;
         
         /// <summary>
-        /// lbl_name control.
+        /// lbl_Name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_name;
+        protected global::System.Web.UI.WebControls.Label lbl_Name;
         
         /// <summary>
-        /// txtbx_fname control.
+        /// txtbx_Name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtbx_fname;
-        
-        /// <summary>
-        /// txtbx_mname control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtbx_mname;
-        
-        /// <summary>
-        /// txtbx_lname control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtbx_lname;
-        
-        /// <summary>
-        /// txtbx_nsuffix control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtbx_nsuffix;
+        protected global::System.Web.UI.WebControls.TextBox txtbx_Name;
         
         /// <summary>
         /// lbl_contact control.
@@ -139,30 +112,39 @@ namespace RentaRide.Webpages {
         protected global::System.Web.UI.WebControls.TextBox txtbx_password;
         
         /// <summary>
-        /// lbl_confirmPassword control.
+        /// lbl_conpass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_confirmPassword;
+        protected global::System.Web.UI.WebControls.Label lbl_conpass;
         
         /// <summary>
-        /// txtbx_confirmPassword control.
+        /// txtbx_conpass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtbx_confirmPassword;
+        protected global::System.Web.UI.WebControls.TextBox txtbx_conpass;
         
         /// <summary>
-        /// btn_register control.
+        /// chk_agree control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_register;
+        protected global::System.Web.UI.WebControls.CheckBox chk_agree;
+        
+        /// <summary>
+        /// btn_Register control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Register;
     }
 }

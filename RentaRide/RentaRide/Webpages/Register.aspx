@@ -4,36 +4,74 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link href="../CSS/Register.css" rel="stylesheet" />
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-        
-        <h1>Register Page </h1>
-        <h4>Wala Pang Design at the momint</h4>
-        <asp:Label ID="lbl_username" runat="server" Text="Username:"></asp:Label>
-        <asp:TextBox ID="txtbx_username" runat="server"></asp:TextBox>
-        <br/>
-        <asp:Label ID="lbl_name" runat="server" Text="Name"></asp:Label>
+    <div class="nav-container">
 
-        <asp:TextBox ID="txtbx_fname" runat="server" ></asp:TextBox>
-        <asp:TextBox ID="txtbx_mname" runat="server"></asp:TextBox>
-        <asp:TextBox ID="txtbx_lname" runat="server"></asp:TextBox>
-        <asp:TextBox ID="txtbx_nsuffix" runat="server"></asp:TextBox>
-        <br/>
-         <asp:Label ID="lbl_contact" runat="server" Text="Contacts:"></asp:Label><asp:TextBox ID="txtbx_contact" runat="server"></asp:TextBox>
-        <br/>
-         <asp:Label ID="lbl_email" runat="server" Text="Email:"></asp:Label><asp:TextBox ID="txtbx_email" runat="server"></asp:TextBox>
-        <br/>
-         <asp:Label ID="lbl_password" runat="server" Text="Password:"></asp:Label>&nbsp;
-        <asp:TextBox ID="txtbx_password" runat="server" TextMode="Password"></asp:TextBox>
-        <br/>
-         <asp:Label ID="lbl_confirmPassword" runat="server" Text="Confirm Password:"/><asp:TextBox ID="txtbx_confirmPassword" runat="server" TextMode="Password"></asp:TextBox>
+        <div class="nav-wrapper">
+            <nav>
+                <div class="nav-logo">
+                    RENTARIDE
+                </div>
+                <div class="nav-items">
+                    <ul>
+                               
+                         <li><a href=>Go Back</a></li>
+                        
+                    </ul>
+                </div>
 
-        <br/>
-        <asp:Button ID="btn_register" runat="server" Text="Register" OnClick="btn_register_Click" />
+
+            </nav>
+            </div>
     </div>
-    </form>
+
+<div class="header-container">
+    <div class="header-wrapper">
+        <header>
+            <div class="header-message">
+                <h1>Sign Up</h1>
+                <p>Already have account? <a href="Login.aspx">Login Here</a></p>
+            </div>
+
+            <form id="formreg" runat="server">       
+                    <asp:Label ID="lbl_username" runat="server" Text="Username"></asp:Label>
+                    <asp:TextBox ID="txtbx_username" runat="server"></asp:TextBox>
+                    <br/>
+                    <br/>
+                    <asp:Label ID="lbl_Name" runat="server" Text="Name"></asp:Label>
+                    <asp:TextBox ID="txtbx_Name" runat="server"></asp:TextBox>
+                    <br/>
+                    <br/>
+                    <asp:Label ID="lbl_contact" runat="server" Text="Contact"></asp:Label>
+                    <asp:TextBox ID="txtbx_contact" runat="server"></asp:TextBox>
+                        <br/>
+                    <br/>
+                    <asp:Label ID="lbl_email" runat="server" Text="Email"></asp:Label>
+                    <asp:TextBox ID="txtbx_email" runat="server"></asp:TextBox>
+                    <br/>
+                    <br/>
+                    <asp:Label ID="lbl_password" runat="server" Text="Password"></asp:Label>
+                    <asp:TextBox ID="txtbx_password" runat="server"></asp:TextBox>
+                    <br/>
+                    <br/>
+                    <asp:Label ID="lbl_conpass" runat="server" Text="Confirm Password"></asp:Label>
+                    <asp:TextBox ID="txtbx_conpass" runat="server"></asp:TextBox>
+                    <br/>
+                    <br/>
+                    <asp:CheckBox ID="chk_agree" runat="server" text="By Signing up you agree to recieve updates and special Offers."/>
+                    <br/>
+                    <br/>
+                    <asp:Button ID="btn_Register" runat="server" Text="Register" OnClick="btn_register_Click" type="input" />
+            </form>
+        </header>
+    </div>
+</div>
+
+
+
+
 </body>
 </html>

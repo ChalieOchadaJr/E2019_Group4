@@ -27,17 +27,40 @@ namespace RentaRide.Webpages
 
         protected void btn_register_Click(object sender, EventArgs e)
         {
-      
+
             con.Open();
             SqlCommand scmd = con.CreateCommand();
             scmd.CommandType = System.Data.CommandType.Text;
-            //scmd.CommandText = "insert into dbo.customer_acc(customer_user,customer_firstname,customer_middlename,customer_lastname,customer_namesuffix,customer_contact,customer_email,customer_password) values ('"+txtbx_username.Text+"','" + txtbx_fname.Text + "','" + txtbx_mname.Text + "','" + txtbx_lname.Text + "','" + txtbx_nsuffix.Text + "','" + txtbx_contact.Text + "','" + txtbx_email.Text + "','"+txtbx_password.Text+"');";
-            scmd.CommandText = "insert into dbo.customer_acc(customer_user,customer_firstname,customer_middlename,customer_lastname,customer_namesuffix,customer_contact,customer_email,customer_password) values ('" + txtbx_username.Text + "','" + txtbx_fname.Text + "','" + txtbx_mname.Text + "','" + txtbx_lname.Text + "','" + txtbx_nsuffix.Text + "','" + txtbx_contact.Text + "','" + txtbx_email.Text + "', HASHBYTES('SHA2_512','" + txtbx_password.Text + "') );";
+            string name = txtbx_Name.Text;
 
+            string[] namepart = name.Split(' ', '\t', '\n', ',');
+
+            if (namepart.Length == 2)
+            {
+                scmd.CommandText = "insert into dbo.customer_acc(customer_user,customer_firstname,customer_middlename,customer_lastname,customer_namesuffix,customer_contact,customer_email,customer_password) values ('" + txtbx_username.Text + "','" + namepart[0] + "',' ','" + namepart[1] + "',' ','" + txtbx_contact.Text + "','" + txtbx_email.Text + "','" + txtbx_password.Text + "');";
+
+
+            }
+            else if (namepart.Length == 3)
+            {
+
+                scmd.CommandText = "insert into dbo.customer_acc(customer_user,customer_firstname,customer_middlename,customer_lastname,customer_namesuffix,customer_contact,customer_email,customer_password) values ('" + txtbx_username.Text + "','" + namepart[0] + "','" + namepart[1] + "','" + namepart[2] + "',' ','" + txtbx_contact.Text + "','" + txtbx_email.Text + "','" + txtbx_password.Text + "');";
+
+
+            }
+            else {
+
+
+                scmd.CommandText = "insert into dbo.customer_acc(customer_user,customer_firstname,customer_middlename,customer_lastname,customer_namesuffix,customer_contact,customer_email,customer_password) values ('" + txtbx_username.Text + "','" + namepart[0] + "','" + namepart[1] + "','" + namepart[2] + "','" + namepart[3] + "','" + txtbx_contact.Text + "','" + txtbx_email.Text + "','" + txtbx_password.Text + "');";
+
+
+            }
+            //scmd.CommandText = "insert into dbo.customer_acc(customer_user,customer_firstname,customer_middlename,customer_lastname,customer_namesuffix,customer_contact,customer_email,customer_password) values ('"+txtbx_username.Text+"','" + txtbx_fname.Text + "','" + txtbx_mname.Text + "','" + txtbx_lname.Text + "','" + txtbx_nsuffix.Text + "','" + txtbx_contact.Text + "','" + txtbx_email.Text + "','"+txtbx_password.Text+"');";
             scmd.ExecuteNonQuery();
             con.Close();
+            Response.Redirect("../Default.aspx", false);
+            
         }
-
 
     }
 }
